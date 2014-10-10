@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <title>影片解析</title>
 
-  <script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="media/js/jquery-1.7.1.min.js"></script>
   <script type="text/javascript" src="media/js/base64.js"></script>
   <script type="text/javascript" src="media/js/getFlv.js"></script>
   <script type="text/javascript" src="media/js/ZeroClipboard.min.js"></script>
 </head>
 
 <body>
-  <input type="text" name="url" id="videoPageURI" class="form-control" placeholder="在這裡粘貼視頻頁面的地址...(包含http://)" style="outline: none;">
+  <input type="text" name="url" id="videoPageURI" class="form-control" style="outline: none;">
 
   <span class="input-group-btn">
-    <input type="button" id="fetchButton" class="btn btn-default" value="獲取地址" onclick="parseFlv();">
+    <input type="button" id="fetchButton" class="btn btn-default" value="GO!" onclick="parseFlv();">
   </span>
 
   <div class="panel-body" id="resultbox" style="display: none;">
