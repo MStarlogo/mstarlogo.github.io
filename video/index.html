@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>視頻地址解析</title>
+
+  <script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="media/js/base64.js"></script>
+  <script type="text/javascript" src="media/js/getFlv.js"></script>
+  <script type="text/javascript" src="media/js/ZeroClipboard.min.js"></script>
+</head>
+
+<body>
+  <input type="text" name="url" id="videoPageURI" class="form-control" placeholder="在這裡粘貼視頻頁面的地址...(包含http://)" style="outline: none;">
+
+  <span class="input-group-btn">
+    <input type="button" id="fetchButton" class="btn btn-default" value="獲取地址" onclick="parseFlv();">
+  </span>
+
+  <div class="panel-body" id="resultbox" style="display: none;">
+    <span class="pull-right" id="apiurls"></span>獲取結果 (<span style="color:#cc0000"></span>)
+  </div>
+
+  <div id="result">等待提交</div>
+    
+</body>
+</html>
