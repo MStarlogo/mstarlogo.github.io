@@ -120,7 +120,11 @@ $(document).ready(function(){
 		if($(this).attr('type')=='text') createCookie('loginname',$(this).val());
 		else if($(this).attr('type')=='password') createCookie('loginpass',$(this).val());
 	});
+<<<<<<< HEAD:video/media/js/getFlv.js
 	//根據url的地址，執行init
+=======
+	//根据url的地址，执行init
+>>>>>>> e435c097a46b386acba13e6278d3e486688b3411:video1/js/getFlv.js
 	var videoPageURI = location.toString().queryString('url');
 	$('#fetchButton').val(button_label0);
 	if(videoPageURI==null){
@@ -159,7 +163,11 @@ window.copyToClipboard = function(){
 }
 window.filterResult = function(btn){
 	var tag = btn.html();
+<<<<<<< HEAD:video/media/js/getFlv.js
 	var hided = btn.hasClass('active'); // 如果按下之前已經是按下的狀態，這次則是讓他變為不選中
+=======
+	var hided = btn.hasClass('active'); // 如果按下之前已经是按下的状态，这次则是让他变为不选中
+>>>>>>> e435c097a46b386acba13e6278d3e486688b3411:video1/js/getFlv.js
 	$('#result .quality').each(function(){
 		var quality = $(this).html();
 		if(quality.indexOf(tag)==-1){
