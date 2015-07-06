@@ -1,0 +1,77 @@
+<!--
+Simple UITableView implementation using only HTML and CSS.
+Created by Caleb Davenport on June 6, 2012.
+http://caleb.dvnprt.me
+This is free to use. I hold no copyright.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport" />
+    <title>最新消息</title>
+    <style>
+      
+      body {
+        font-size: 1.2em;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        margin: 20px;
+      }
+
+      .custom-counter {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .custom-counter li {
+        counter-increment: step-counter;
+        margin-bottom: 10px;
+      }
+
+      .custom-counter li::before {
+        content: counter(step-counter);
+        margin-right: 5px;
+        font-size: 80%;
+        background-color: rgb(0,200,200);
+        color: white;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+
+<body>
+  <p>最新消息</p>
+  <ol class="custom-counter">
+   <li>愛奇藝暫時使用低清影片</li>
+  </ol>
+
+  <div style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></div>
+
+  <p>支援網站</p>
+  <ol class="custom-counter">
+    <!--<li><del>愛奇藝</del></li>-->
+    <li><a href="http://www.iqiyi.com">愛奇藝</a></li>
+    <li><a href="http://www.letv.com">樂視網</a></li>
+    <li><a href="http://v.qq.com">騰訊視頻</a></li>
+    <li><a href="http://www.tudou.com">土豆網</a></li>
+    <li><a href="http://www.youku.com">優酷</a></li>
+    <li><a href="http://tv.sohu.com">搜狐</a></li>
+    <li><a href="http://www.bilibili.com">嗶哩嗶哩</a></li>
+    <li><a href="http://www.acfun.tv">AcFun</a></li>
+  </ol>
+  
+  <div style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></div>
+  
+  <p>影片搜尋</p>
+  <ol class="custom-counter">
+    <li><a href="http://www.yunfan.com">雲帆</a></li>
+    <li><a href="http://www.soku.com/channel/index______1.html">搜庫</a></li>
+    <li><a href="http://www.360kan.com">360影視</a></li>
+  </ol>
+  
+</body>
+</html>
