@@ -1,0 +1,85 @@
+<!--
+Simple UITableView implementation using only HTML and CSS.
+Created by Caleb Davenport on June 6, 2012.
+http://caleb.dvnprt.me
+This is free to use. I hold no copyright.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport" />
+    <title>News</title>
+    <style>
+      
+      body {
+        font-size: 1.2em;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        margin: 20px;
+      }
+
+      .custom-counter {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .custom-counter li {
+        counter-increment: step-counter;
+        margin-bottom: 10px;
+      }
+
+      .custom-counter li::before {
+        content: counter(step-counter);
+        margin-right: 5px;
+        font-size: 80%;
+        background-color: rgb(0,200,200);
+        color: white;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+
+<body>
+ 
+ 
+ <p>Topic</p>
+ <ol class="custom-counter">
+  <li>This App is free. You can click the advertisement for supporting me further.</li>
+  <li>Support not only below listed websites, but also you can try for others.</li>
+  <li>Please use HTML5 player if the website is available for it.</li>
+ </ol>
+ <div style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></div>
+ 
+ 
+ <p>News</p>
+ <div style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></div>
+ 
+ 
+ <p>Support</p>
+ <ol class="custom-counter">
+  <li><a href="http://www.iqiyi.com">iQIYI</a></li>
+  <li><a href="http://www.letv.com">LeTV</a></li>
+  <li><a href="http://v.qq.com">QQ</a></li>
+  <li><a href="http://www.tudou.com">Tudou</a></li>
+  <li><a href="http://www.youku.com">Youku</a></li>
+  <li><a href="http://tv.sohu.com">Sohu</a></li>
+  <li><a href="http://www.bilibili.com">bilibili</a></li>
+  <li><a href="http://www.acfun.tv">AcFun</a></li>
+ </ol>
+ <div style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></div>
+ 
+ 
+ <p>Video search engine</p>
+ <ol class="custom-counter">
+  <li><a href="http://www.yunfan.com">Yunfan</a></li>
+  <li><a href="http://www.soku.com/channel/index______1.html">SOKU</a></li>
+  <li><a href="http://www.360kan.com">360Kan</a></li>
+ </ol>
+ 
+ 
+</body>
+</html>
